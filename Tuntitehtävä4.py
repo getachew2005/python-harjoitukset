@@ -13,3 +13,4 @@ if vuosi % 4 == 0 and vuosi !=2020
     print("oli olympiavuosi")
  else:  
     print("Ei ollut olympiavuosia")
+    
