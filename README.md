@@ -1,1 +1,1 @@
-Tehty 1. moduulien 1-3 tehtävät.
+1-3 moduulien tehtävät.
