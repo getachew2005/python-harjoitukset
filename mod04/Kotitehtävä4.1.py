@@ -3,7 +3,7 @@ alamitta = 37
 if kuha < alamitta:
     puuttuu = alamitta - kuha
     print("Laske kuha takasin järveen, ")
-    print(f"{puuttuu:.1f} puuttuu cm")
+    print(f"{puuttuu:.1f} cm puuttuu")
 else:
     print("Oikea kuhan pituus!")
 
