@@ -1,4 +1,4 @@
-sukupuoli =input("Anna sukupuoli ( nainen/mies): ")
+sukupuoli =input("Anna sukupuoli (nainen/mies): ")
 hemoglobiini = int(input("Anna hemoglobiiniarvo (g/l): "))
 
 if sukupuoli == "nainen":
