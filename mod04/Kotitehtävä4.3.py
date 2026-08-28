@@ -1,5 +1,4 @@
-arvo = int(input("Anna biologinen sukupuoli: "))
-arvo = nainen
+arvo =input("Anna biologinen sukupuoli: ")
 if arvo < 117:
     print("Hemoglobiininarvo on alhainen.")
 elif arvo == 125:
