@@ -1,8 +1,11 @@
-import math 
+while True:
+    tuuma = float(input("Anna tuumamäärä: "))
 
-tuuma = input("Anna tuumamäärä: ")
+    if tuuma < 0:
+        break
 
-while komento != "lopeta":
-    print("Suoritan toiminnon: " + komento)
-    komento = input("Anna komento: ")
-print("Toiminnot lopetettu.")
+    senttimetri = tuuma * 2.54
+    print(f"{tuuma} tumaa = {senttimetri} cm")
+
+
+    
