@@ -1,8 +1,5 @@
-import random
-
-kerrat = int(input("Montako kertaa on jaollisia lukuja: "))
-x = random.randint(1, 1000)
-tehdyt = 0
-while tehdyt < kerrat:
-    print(x)
-    tehdyt = tehdyt / 3
+numero = 1
+while numero <= 1000:
+    if numero % 3 == 0:
+        print(numero)
+    numero += 1
