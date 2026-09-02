@@ -1,7 +1,7 @@
 numeroluvut = []
 
 while True:
-    syote = input("Anna luku (tyhjä lopettaa): ")
+    syote = input("Anna jokin luku (tyhjä lopettaa): ")
 
     if syote == "":
         break
