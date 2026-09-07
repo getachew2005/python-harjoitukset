@@ -4,6 +4,4 @@ while komento != "lopeta":
         break
     print("Suoritan komennon: " + komento)
     komento = input("Syötä komento: ")
-else:
-    print("Näkemiin.")
 print("Toiminto lopetettu.")
