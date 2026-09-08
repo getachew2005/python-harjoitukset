@@ -1,7 +1,27 @@
-kayttaja = input("Anna nimesi: ")
-ika = int(input("Anna ikä: "))
+esineet = []
 
-if ika < 12:
+
+def lisaa_esine():
+    esine = input("Syötä jokin esine:")
+    esineet.append(esine)
+    print("Esinettä on lisätty.")
+
+
+def nayta_esine():
+    print("Tavarat:")
+
+    for esine in esineet:
+        print(esine)
+
+
+def tervehdys():
+    print("Tervetuloa peliin, nimeltään The Incredible-Flash-peliin!")
+
+
+kayttaja = input("Anna nimesi: ")
+ikä = int(input("Anna ikä: "))
+
+if ikä < 12:
     print("Olet todella nuori pelaamaan.")
 else:
     print("Tervettuloa The Incredible Flash-peliin", kayttaja, "!")
@@ -30,5 +50,3 @@ else:
 
         else:
             print("Tuntematon komento.")
-
-
