@@ -1,8 +1,8 @@
-nimet = []
+pelit = []
 
-nimi = input("Anna ensimmäinen nimi tai lopeta painamalla Enter: ")
-while nimi != "":
-    nimet.append(nimi)
-    nimi = input("Anna seuraava nimi tai lopeta painamalla Enter: ")
+peli = input("Anna ensimmäinen peli tai lopeta painamalla Enter: ")
+while peli != "":
+    pelit.append(peli)
+    peli = input("Anna seuraava peli tai lopeta painamalla Enter: ")
 
-print(nimet)
+print(pelit)
