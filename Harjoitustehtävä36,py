@@ -1,0 +1,17 @@
+class Elokuva:
+    def __init__(self, nimi, valmistusvuosi, lausahdus="Wakanda forever"):
+        self.nimi = nimi
+        self.valnistusvuosi = valmistusvuosi
+        self.lausahdus = lausahdus
+
+    def sano(self, kerrat):
+        for i in range(kerrat):
+            print(self.lausahdus)
+        return
+
+
+elokuva1 = Elokuva("Avengers Infinity War", 2018)
+elokuva2 = Elokuva("Avengers Endgame", 2019, "I am Iron Man")
+
+elokuva1.sano(1)
+elokuva2.sano(1)
