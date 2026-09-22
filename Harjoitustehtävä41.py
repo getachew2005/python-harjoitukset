@@ -3,6 +3,7 @@ class Pelihahmo:
         self.nimi = nimi
         self.taso = taso
 
+
 class Pelaaja:
     def __init__(self, nimi):
         self.nimi = nimi
@@ -10,6 +11,7 @@ class Pelaaja:
 
     def aseta_hahmo(self, hahmo):
         self.hahmo = hahmo
+
 
 pelaaja = Pelaaja("Bruce")
 hahmo = Pelihahmo("Sonic", 40)
