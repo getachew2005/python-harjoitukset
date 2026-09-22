@@ -4,6 +4,7 @@ class Osoite:
         self.postinumero = postinumero
         self.kaupunki = kaupunki
 
+
 class Henkilö:
     def __init__(self, nimi):
         self.nimi = nimi
@@ -11,6 +12,7 @@ class Henkilö:
 
     def aseta_osoite(self, osoite):
         self.osoite = osoite
+
 
 henkilö = Henkilö("Toby")
 osoite = Osoite("Takomotie 27", "00380", "Helsinki")
@@ -21,9 +23,3 @@ print(henkilö.nimi)
 print(henkilö.osoite.katu)
 print(henkilö.osoite.postinumero)
 print(henkilö.osoite.kaupunki)
-
-
-
-
-
-
