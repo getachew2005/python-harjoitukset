@@ -1,24 +1,18 @@
 class Auto:
-    def __int__(self, rekisteritunnus, huippunopeus):
-        self.rekisteritunnus = huippunopeus
+    def __init__(self, rekisteritunnus, huippunopeus):
+        self.rekisteritunnus = rekisteritunnus
         self.huippunopeus = huippunopeus
-        self.tämänhetkinen_nopeus = 0
+        self.nopeus = 0
         self.kuljettu_matka = 0
-    def kiihdyta(self, muutos):
-        if self.tämanhetkinen_nopeus - muutos <= 0:
-            self.tämanhetkinen_nopeus = 0
-        elif self.tämanhetkinen_nopeus + muutos >= self.huippunopeus:
-            self.tamanhetkinen_nopeus = self.huippunopeus
-        else:
-            self.tämanhetkinen_nopeus += muutos
 
-auto1 = Auto("ABC-123", 142)
-auto1.kiihdyta(30)
-auto1.kiihdyta(70)
-auto1.kiihdyta(50)
-print(f"Auton nopeus nyt: {auto1.tämanhetkinen_nopeus}")
-auto1.kiihdyta
-print(f"Auton nopeus nyt: {auto1.tämanhetkinen_nopeus}")          
+
+# Pääohjelma
+auto = Auto("ABC-123", 142)
+
+print("Rekisteritunnus:", auto.rekisteritunnus)
+print("Huippunopeus:", auto.huippunopeus, "km/h")
+print("Nopeus:", auto.nopeus, "km/h")
+print("Kuljettu matka:", auto.kuljettu_matka, "km")         
 
 
 
