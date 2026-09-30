@@ -9,15 +9,15 @@ class Auto:
         self.matkamittari += self.nopeus * tunnit
 
 
-class Sähköauto:
+class Sähköauto(Auto):
     def __init__(self, rekisteri, huippunopeus, akku):
-        super().__init__(self, rekisteri, huippunopeus)
+        super().__init__(rekisteri, huippunopeus)
         self.akku = akku
 
 
-class Polttomoottoriauto:
+class Polttomoottoriauto(Auto):
     def __init__(self, rekisteri, huippunopeus, tankki):
-        super().__init__(self, rekisteri, huippunopeus)
+        super().__init__(rekisteri, huippunopeus)
         self. tankki = tankki
 
 
