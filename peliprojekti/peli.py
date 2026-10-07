@@ -1,6 +1,7 @@
-print("------------")
+print("------------------------")
 with open ("peliprojekti/intro.txt", "r", encoding='utf') as tiedosto:
     print(tiedosto.read())
+print("------------------------")
 
 esineet = []
 
@@ -33,19 +34,25 @@ def vaista_vihollisia():
     viholliset.append(vihollinen)
     print("Vihollinen lisätty.")
 
-nopeus = input("Valitse juoksunopeus: ")
-if 500 > nopeus >= 400 or (nopeus == 500):
-    print("Olet riittävän nopea.")
+    nopeus = int(input("Valitse juoksunopeus: "))
+    if 500 > nopeus >= 400 or (nopeus == 500):
+        print("Olet riittävän nopea.")
 
-elif 399 > nopeus >= 200 or (nopeus == 399):
-    print("Olet nopea mutta et riittävästi.")
+    elif 399 > nopeus >= 200 or (nopeus == 399):
+        print("Olet nopea mutta et riittävästi.")
 
-elif 199 < nopeus:
-    print("Olet hidas tälle pelille.")
+    elif 199 < nopeus:
+        print("Olet hidas tälle pelille.")
 
+    komento = input("Mitä Flash tekee, kun hän kohtaa vihollisen edessään: ")
+    print("Flash hahmo " + komento + " edessä olevan vihollisen.")
 
+    piste = int(input("Valitse pelissä keräämä pistemäärä: "))
+    if 200 > piste >= 150 or (piste == 200):
+        print("Hyvä pistemää.")
 
-
+    elif 149 < nopeus:
+        print("Heikko pistemäärä.")
 
 
 def tervehdys():
@@ -57,8 +64,6 @@ def peli():
     nayta_esine()
     keraa_pisteita()
     vaista_vihollisia()
-
-
 
 
 kayttaja = input("Anna nimesi: ")
@@ -82,8 +87,10 @@ else:
             peli()
 
         elif komento == "2":
+            print("------------------------")
             with open ("peliprojekti/ohjeet.txt", "r", encoding='utf') as tiedosto:
                 print(tiedosto.read())
+            print("------------------------")
 
         elif komento == "3":
             print("Mukavaa pelipäivää!")
