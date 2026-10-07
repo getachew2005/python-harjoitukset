@@ -1,3 +1,7 @@
+print("------------")
+with open ("peliprojekti/intro.txt", "r", encoding='utf') as tiedosto:
+    print(tiedosto.read())
+
 esineet = []
 
 
@@ -13,9 +17,48 @@ def nayta_esine():
     for esine in esineet:
         print(esine)
 
+pisteet = []
+
+def keraa_pisteita():
+    piste = input("Syötä pistemäärä: ")
+    pisteet.append(piste)
+    print("Piste lisätty.")
+
+
+
+viholliset = []
+
+def vaista_vihollisia():
+    vihollinen = input("Laita jokin vihollinen: ")
+    viholliset.append(vihollinen)
+    print("Vihollinen lisätty.")
+
+nopeus = input("Valitse juoksunopeus: ")
+if 500 > nopeus >= 400 or (nopeus == 500):
+    print("Olet riittävän nopea.")
+
+elif 399 > nopeus >= 200 or (nopeus == 399):
+    print("Olet nopea mutta et riittävästi.")
+
+elif 199 < nopeus:
+    print("Olet hidas tälle pelille.")
+
+
+
+
+
 
 def tervehdys():
     print("Tervetuloa peliin, nimeltään The Incredible-Flash-peliin!")
+
+def peli():
+    print("")
+    lisaa_esine()
+    nayta_esine()
+    keraa_pisteita()
+    vaista_vihollisia()
+
+
 
 
 kayttaja = input("Anna nimesi: ")
@@ -36,10 +79,11 @@ else:
         komento = input("Anna komento: ")
 
         if komento == "1":
-            print("The Incredible Flash-peli alkaa!")
+            peli()
 
         elif komento == "2":
-            print("Tässä pelissä sinun tehtäväsi on selviytyä.")
+            with open ("peliprojekti/ohjeet.txt", "r", encoding='utf') as tiedosto:
+                print(tiedosto.read())
 
         elif komento == "3":
             print("Mukavaa pelipäivää!")

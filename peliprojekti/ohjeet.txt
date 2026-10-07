@@ -1,0 +1,1 @@
+Pelin ohjeeseen kuuluu se, että pelaajan tehtävänä on Flash-hahmon avulla kerätä riittävästi kultaisia esineitä, jotka ovat pelissä kultaiset kengät. The Incredible Flash-pelin ohjeeseen kuuluu myös väistää vihollisia Fashin ollessa juoksutiellä. Pelin tavoitteena on pelaajan läpäistä juoksutie viimesitään tiettynä aikana.
