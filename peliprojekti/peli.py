@@ -7,7 +7,7 @@ esineet = []
 
 
 def lisaa_esine():
-    esine = input("Syötä jokin esine:")
+    esine = input("Syötä pelissä oleva esine:")
     esineet.append(esine)
     print("Esinettä on lisätty.")
 
@@ -30,7 +30,7 @@ def keraa_pisteita():
 viholliset = []
 
 def vaista_vihollisia():
-    vihollinen = input("Laita jokin vihollinen: ")
+    vihollinen = input("Laita The Incredible Flashissa oleva vihollinen: ")
     viholliset.append(vihollinen)
     print("Vihollinen lisätty.")
 
@@ -44,15 +44,63 @@ def vaista_vihollisia():
     elif 199 < nopeus:
         print("Olet hidas tälle pelille.")
 
+
     komento = input("Mitä Flash tekee, kun hän kohtaa vihollisen edessään: ")
     print("Flash hahmo " + komento + " edessä olevan vihollisen.")
 
+
     piste = int(input("Valitse pelissä keräämä pistemäärä: "))
     if 200 > piste >= 150 or (piste == 200):
-        print("Hyvä pistemää.")
+        print("Hyvä pistemää. Voitit tason.")
 
-    elif 149 < nopeus:
+    elif 149 < piste:
+        print("Heikko pistemäärä. Hävisit tason.")
+
+
+    print("----------------------------------------------------------------")
+    print("Pelasit ensimmäistä tasoa ajoissa, ja pistemääräsi on 161/200.")
+    print("----------------------------------------------------------------")
+
+
+    muokkaus = input("Koska olet kerännyt vähintään 160 pistettä, pääset vapaaehtoisesti muokkaamaan Flashin puvun väriä. Värejä on vain kuusi. Valitse väri: ")
+    if muokkaus == "sininen":
+        print("Flashin punainen puku on vaihdettu siniseen pukuun.")
+
+    elif muokkaus == "vihreä":
+        print("Pelihahmo Flashin puku on muokattu vihreään pukuun.")
+
+    elif muokkaus == "keltainen":
+        print("Flashin punainen puku on vaihdettu keltaiseen pukuun.")
+
+    elif muokkaus == "violetti":
+        print("Pelihahmo Flashin puku on muokattu violettiin pukuun.")
+
+    elif muokkaus == "oranssi":
+        print("Flashin punainen puku on vaihdettu oransiin pukuun.")
+
+
+    piste = int(input("Valitse The Incredible Flash-pelissä keräämä pistemäärä: "))
+    if 200 > piste >= 150 or (piste == 200):
+        print("Hyvä pistemää.")
+    
+    elif 149 < piste:
         print("Heikko pistemäärä.")
+
+
+    print("----------------------------------------------------------------")
+    print("Pelasit toista tasoa ajoissa, ja pistesi on 171/200.")
+    print("----------------------------------------------------------------")
+
+
+    päivitys = input("Olet kerännyt vähintään 170 pistettä, mitä haluat päivittää hahmosta: ")
+    if päivitys == "voima":
+        print("Olet päivittänyt pelihahmo Flashin voiman tasoa.")
+
+    elif päivitys == "kestävyys":
+        print("Olet päivittänyt Fashin kestävyyttä.")
+
+    elif päivitys == "nopeus":
+        print("Olet päivittänyt pelihahmon nopeutta.")
 
 
 def tervehdys():
@@ -72,7 +120,7 @@ ikä = int(input("Anna ikä: "))
 if ikä < 12:
     print("Olet todella nuori pelaamaan.")
 else:
-    print("Tervettuloa The Incredible Flash-peliin", kayttaja, "!")
+    print("Tervettuloa The Incredible Flash-peliin " + kayttaja + "!")
 
     while True:
         print("\nPÄÄVALIKKO")
